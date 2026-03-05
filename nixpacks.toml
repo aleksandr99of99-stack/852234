@@ -2,7 +2,7 @@
 nixPkgs = ["nodejs_20"]
 
 [phases.install]
-cmds = ["npm install"]
+cmds = ["npm install --prefer-offline"]
 
 [start]
-cmd = "npx n8n start"
+cmd = "node_modules/.bin/n8n start"
